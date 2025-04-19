@@ -24,3 +24,15 @@ Modern e-learning platforms prioritize responsive design, ensuring the interface
 A successful e-learning platform balances functionality with an inviting, distraction-free interface. Features such as collapsible sidebars, clear call-to-action buttons, and easy access to support or community forums foster a sense of community and help learners stay on track. Consistency in design and navigation ensures users can move between pages and courses effortlessly, enhancing satisfaction and learning outcomes
 In summary, a multi-page e-learning platform is a thoughtfully designed ecosystem that combines structured navigation, multimedia course delivery, and robust progress tracking to create an engaging, effective, and accessible learning experience for all users
 
+*OUTPUT
+![Image](https://github.com/user-attachments/assets/9c74322d-faaf-4b36-ba9d-ca7dc5fc63a6)
+![Image](https://github.com/user-attachments/assets/05ca2c0d-e27e-4fbd-a6cd-a7a2ee4a194d)
+![Image](https://github.com/user-attachments/assets/978fb123-6215-4f12-9c14-841234f6ba42)
+![Image](https://github.com/user-attachments/assets/58bb2422-0e65-474c-b831-3f0eb55dc640)
+![Image](https://github.com/user-attachments/assets/b1231b47-a85f-46ab-93e1-592d62ab20f4)
+![Image](https://github.com/user-attachments/assets/f60e4612-f788-41a7-b6aa-741a3dc45787)
+
+![Image](https://github.com/user-attachments/assets/5f4d12e5-81ae-4583-9dd7-3844afd66839)
+![Image](https://github.com/user-attachments/assets/d52702aa-e551-4959-99e5-63c0e114f7bd)
+![Image](https://github.com/user-attachments/assets/f4ca54c6-a4b6-4e50-bfdd-739e5aebbac5)
+
