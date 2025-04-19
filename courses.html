@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - LearnHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        Learn<span class="text-gray-800">Hub</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="courses.html" class="text-blue-600 px-3 py-2 font-medium">Courses</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">About</a>
+                    <a href="#" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                    <a href="dashboard.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Dashboard</a>
+                    <a href="#"
+                        class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">Get
+                        Started</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl text-gray-600"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="courses.html" class="block py-2 px-4 text-sm bg-blue-50 text-blue-600">Courses</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-100">About</a>
+            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+            <a href="dashboard.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Dashboard</a>
+            <a href="#" class="block py-2 px-4 text-sm bg-blue-600 text-white">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Course Header -->
+    <div class="pt-24 pb-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Explore Our Courses</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose from our wide range of courses designed to help you achieve your goals and advance your
+                    career.
+                </p>
+            </div>
+
+            <!-- Course Filters -->
+            <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                <button class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">All
+                    Courses</button>
+                <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition">Web
+                    Development</button>
+                <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition">Data
+                    Science</button>
+                <button
+                    class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition">Design</button>
+                <button
+                    class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition">Business</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Grid -->
+    <div class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Course Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg"
+                        alt="Web Development Course" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">Web
+                                Development</span>
+                            <span class="text-gray-600"><i class="fas fa-users mr-2"></i>2.5k Students</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Complete Web Development Bootcamp</h3>
+                        <p class="text-gray-600 mb-4">Master HTML, CSS, JavaScript, React, and Node.js in this
+                            comprehensive course.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Instructor"
+                                    class="w-10 h-10 rounded-full">
+                                <span class="ml-2 text-gray-700">John Smith</span>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-800">$99</span>
+                        </div>
+                        <a href="course-detail.html"
+                            class="mt-4 block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Course
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/7567558/pexels-photo-7567558.jpeg"
+                        alt="Data Science Course" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-medium">Data
+                                Science</span>
+                            <span class="text-gray-600"><i class="fas fa-users mr-2"></i>1.8k Students</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Data Science & Machine Learning</h3>
+                        <p class="text-gray-600 mb-4">Learn Python, Data Analysis, Machine Learning, and Deep Learning
+                            fundamentals.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor"
+                                    class="w-10 h-10 rounded-full">
+                                <span class="ml-2 text-gray-700">Sarah Johnson</span>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-800">$129</span>
+                        </div>
+                        <a href="course-detail.html"
+                            class="mt-4 block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Course
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
+                        alt="UI/UX Design Course" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-medium">Design</span>
+                            <span class="text-gray-600"><i class="fas fa-users mr-2"></i>1.2k Students</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">UI/UX Design Masterclass</h3>
+                        <p class="text-gray-600 mb-4">Master the principles of user interface and user experience
+                            design.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Instructor"
+                                    class="w-10 h-10 rounded-full">
+                                <span class="ml-2 text-gray-700">Mike Chen</span>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-800">$89</span>
+                        </div>
+                        <a href="course-detail.html"
+                            class="mt-4 block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Course
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg" alt="Business Course"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm font-medium">Business</span>
+                            <span class="text-gray-600"><i class="fas fa-users mr-2"></i>950 Students</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Digital Marketing Strategy</h3>
+                        <p class="text-gray-600 mb-4">Learn to create and execute effective digital marketing campaigns.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Instructor"
+                                    class="w-10 h-10 rounded-full">
+                                <span class="ml-2 text-gray-700">Emma Davis</span>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-800">$79</span>
+                        </div>
+                        <a href="course-detail.html"
+                            class="mt-4 block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Course
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 hidden"
+                    id="course-5">
+                    <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg"
+                        alt="Mobile Development Course" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">Development</span>
+                            <span class="text-gray-600"><i class="fas fa-users mr-2"></i>1.5k Students</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">iOS App Development</h3>
+                        <p class="text-gray-600 mb-4">Build iOS applications using Swift and modern development
+                            practices.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/men/92.jpg" alt="Instructor"
+                                    class="w-10 h-10 rounded-full">
+                                <span class="ml-2 text-gray-700">David Kim</span>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-800">$119</span>
+                        </div>
+                        <a href="course-detail.html"
+                            class="mt-4 block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Course
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course Card 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 hidden"
+                    id="course-6">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+                        alt="Project Management Course" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm font-medium">Management</span>
+                            <span class="text-gray-600"><i class="fas fa-users mr-2"></i>750 Students</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Agile Project Management</h3>
+                        <p class="text-gray-600 mb-4">Master Agile methodologies and lead successful development teams.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Instructor"
+                                    class="w-10 h-10 rounded-full">
+                                <span class="ml-2 text-gray-700">Lisa Wang</span>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-800">$89</span>
+                        </div>
+                        <a href="course-detail.html"
+                            class="mt-4 block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            View Course
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more"
+                    class="px-8 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition duration-300">
+                    Load More Courses
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Learn<span class="text-blue-400">Hub</span></h3>
+                    <p class="text-gray-400">Transforming lives through online education.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-2"></i>
+                            info@learnhub.com
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            123 Learning Street, Education City
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>

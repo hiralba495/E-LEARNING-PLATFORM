@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Transform Your Future with Online Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        Learn<span class="text-gray-800">Hub</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="courses.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Courses</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">About</a>
+                    <a href="#" id="contactBtn"
+                        class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                    <a href="dashboard.html"
+                        class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Dashboard</a>
+                    <a href="#" id="getStartedBtn"
+                        class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">Get
+                        Started</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl text-gray-600"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="courses.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Courses</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-100">About</a>
+            <a href="#" id="contactBtnMobile" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+            <a href="dashboard.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Dashboard</a>
+            <a href="#" class="block py-2 px-4 text-sm bg-blue-600 text-white">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 h-screen flex items-center">
+        <div class="absolute inset-0">
+            <img src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg" alt="Students learning"
+                class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-8">
+                Transform Your Future With Online Learning
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto">
+                Access world-class education from anywhere. Learn from industry experts and gain the skills you need to
+                succeed.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="courses.html"
+                    class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    Explore Courses
+                </a>
+                <a href="#"
+                    class="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+                Why Choose LearnHub?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Feature 1 -->
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chalkboard-teacher text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Expert Instructors</h3>
+                    <p class="text-gray-600">Learn from industry professionals with years of real-world experience.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Flexible Learning</h3>
+                    <p class="text-gray-600">Study at your own pace, anywhere and anytime that suits you best.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-certificate text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Certification</h3>
+                    <p class="text-gray-600">Earn recognized certificates upon completion of your courses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+                What Our Students Say
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Student"
+                            class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-600">Web Development Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"LearnHub transformed my career. I went from knowing nothing about coding
+                        to landing my dream job as a frontend developer."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student"
+                            class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-800">Michael Chen</h4>
+                            <p class="text-gray-600">Data Science Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The quality of instruction and course materials is outstanding. I've
+                        learned more in 3 months than I did in a year of self-study."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Student"
+                            class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-800">Emily Rodriguez</h4>
+                            <p class="text-gray-600">UX Design Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The flexibility of online learning combined with expert instruction made
+                        it possible for me to pursue my passion while working full-time."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Learn<span class="text-blue-400">Hub</span></h3>
+                    <p class="text-gray-400">Transforming lives through online education.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-2"></i>
+                            info@learnhub.com
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            123 Learning Street, Education City
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login/Signup Modal -->
+    <div id="authModal"
+        class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center hidden z-50">
+        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-md w-full relative flex flex-col gap-4 overflow-hidden transform transition-transform duration-300 ease-in-out scale-95"
+            id="modalContent">
+            <!-- Close Button -->
+            <button id="closeAuthModal"
+                class="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-2xl">&times;</button>
+
+            <!-- Modal Title -->
+            <h2 id="modalTitle" class="text-2xl font-extrabold text-gray-800 mb-4 text-center">Login</h2>
+
+            <!-- Login Form -->
+            <div id="loginForm">
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-1">Email</label>
+                        <input type="email" placeholder="Your Email"
+                            class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-1">Password</label>
+                        <input type="password" placeholder="Your Password"
+                            class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md">
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white font-bold py-2 rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-2xl">
+                        Login
+                    </button>
+                </form>
+                <p class="text-center mt-4">Don't have an account? <button id="showSignup" class="text-blue-600">Sign
+                        Up</button></p>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="signupForm" class="hidden">
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-1">Email</label>
+                        <input type="email" placeholder="Your Email"
+                            class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-1">Password</label>
+                        <input type="password" placeholder="Your Password"
+                            class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-1">Confirm Password</label>
+                        <input type="password" placeholder="Confirm Your Password"
+                            class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md">
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white font-bold py-2 rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-2xl">
+                        Sign Up
+                    </button>
+                </form>
+                <p class="text-center mt-4">Already have an account? <button id="showLogin"
+                        class="text-blue-600">Login</button></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+
+
+        // Get Started button and modal elements
+        const getStartedBtn = document.getElementById('getStartedBtn');
+        const authModal = document.getElementById('authModal');
+        const closeAuthModal = document.getElementById('closeAuthModal');
+        const showSignup = document.getElementById('showSignup');
+        const showLogin = document.getElementById('showLogin');
+        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
+        const modalTitle = document.getElementById('modalTitle');
+
+        // Open the modal when the Get Started button is clicked
+        getStartedBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            authModal.classList.remove('hidden');
+        });
+
+        // Close the modal when the close button is clicked
+        closeAuthModal.addEventListener('click', () => {
+            authModal.classList.add('hidden');
+        });
+
+        // Close when clicking outside the modal
+        window.addEventListener('click', (e) => {
+            if (e.target === authModal) {
+                authModal.classList.add('hidden');
+            }
+        });
+
+        // Show Signup form
+        showSignup.addEventListener('click', () => {
+            loginForm.classList.add('hidden');
+            signupForm.classList.remove('hidden');
+            modalTitle.textContent = 'Sign Up';
+        });
+
+        // Show Login form
+        showLogin.addEventListener('click', () => {
+            signupForm.classList.add('hidden');
+            loginForm.classList.remove('hidden');
+            modalTitle.textContent = 'Login';
+        });
+
+    </script>
+</body>
+
+</html>

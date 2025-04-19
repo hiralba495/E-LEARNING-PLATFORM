@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        Learn<span class="text-gray-800">Hub</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="courses.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Courses</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">About</a>
+                    <a href="#" id="contactBtn"
+                        class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                    <a href="dashboard.html"
+                        class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Dashboard</a>
+                    <a href="#" id="getStartedBtn"
+                        class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">Get
+                        Started</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl text-gray-600"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="courses.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Courses</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-100">About</a>
+            <a href="#" id="contactBtnMobile" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+            <a href="dashboard.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Dashboard</a>
+            <a href="#" class="block py-2 px-4 text-sm bg-blue-600 text-white">Get Started</a>
+        </div>
+    </nav>
+
+    <!--Contact form-->
+    <div class="bg-gray-50 min-h-screen flex items-center justify-center">
+        <div class="container mx-auto px-4 py-12">
+            <div
+                class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-[0_0_20px_5px_rgba(0,0,255,0.3)] flex flex-col md:flex-row gap-8">
+                <!-- Contact Form -->
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl font-extrabold text-gray-800 mb-6 text-center md:text-left">Contact Us</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-semibold mb-2">Name</label>
+                            <input type="text" placeholder="Your Name"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" placeholder="Your Email"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea placeholder="Your Message" rows="5"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-2xl">Send
+                            Message</button>
+                    </form>
+                </div>
+
+                <!-- Get in Touch -->
+                <div
+                    class="w-full md:w-1/3 flex flex-col justify-center bg-blue-600 text-white p-6 rounded-lg shadow-[0_0_20px_5px_rgba(0,0,255,0.3)]">
+                    <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+                    <p class="mb-2 flex items-center gap-2"><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+                    <p class="mb-6 flex items-center gap-2"><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+
+                    <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4 text-2xl">
+                        <a href="#" class="hover:text-gray-200 transition"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-gray-200 transition"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-200 transition"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-extrabold text-gray-800 mb-6 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white border border-blue-300 shadow-md p-4 rounded-lg hover:border-blue-600 transition duration-200">
+                    <button
+                        class="w-full text-left text-2xl font-semibold text-gray-800 flex justify-between items-center faq-question">
+                        What courses do you offer?
+                        <span class="text-blue-600"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">We offer a wide range of courses in web development, data
+                        science, AI, and more.</p>
+                </div>
+                <div class="bg-white border border-blue-300 shadow-md p-4 rounded-lg hover:border-blue-600 transition duration-200">
+                    <button
+                        class="w-full text-left text-2xl font-semibold text-gray-800 flex justify-between items-center faq-question">
+                        How can I enroll in a course?
+                        <span class="text-blue-600"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">You can enroll by signing up and selecting the course you wish
+                        to take.</p>
+                </div>
+                <div class="bg-white border border-blue-300 shadow-md p-4 rounded-lg hover:border-blue-600 transition duration-200">
+                    <button
+                        class="w-full text-left text-2xl font-semibold text-gray-800 flex justify-between items-center faq-question">
+                        Do you provide certificates?
+                        <span class="text-blue-600"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">Yes, we provide certificates upon successful course completion.
+                    </p>
+                </div>
+                <div class="bg-white border border-blue-300 shadow-md p-4 rounded-lg hover:border-blue-600 transition duration-200">
+                    <button
+                        class="w-full text-left text-2xl font-semibold text-gray-800 flex justify-between items-center faq-question">
+                        What payment methods do you accept?
+                        <span class="text-blue-600"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">We accept credit/debit cards, PayPal, and other online payment
+                        methods.</p>
+                </div>
+                <div class="bg-white border border-blue-300 shadow-md p-4 rounded-lg hover:border-blue-600 transition duration-200">
+                    <button
+                        class="w-full text-left text-2xl font-semibold text-gray-800 flex justify-between items-center faq-question">
+                        Can I get a refund if I am not satisfied?
+                        <span class="text-blue-600"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <p class="hidden mt-2 text-gray-600">Yes, we offer a refund policy within the first 14 days of
+                        enrollment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Learn<span class="text-blue-400">Hub</span></h3>
+                    <p class="text-gray-400">Transforming lives through online education.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-2"></i>
+                            info@learnhub.com
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            123 Learning Street, Education City
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

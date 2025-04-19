@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LearnHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        Learn<span class="text-gray-800">Hub</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="courses.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Courses</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">About</a>
+                    <a href="#" id="contactBtn" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                    <a href="dashboard.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Dashboard</a>
+                    <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">Get Started</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl text-gray-600"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="courses.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Courses</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-100">About</a>
+            <a href="#" id="contactBtnMobile" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+            <a href="dashboard.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Dashboard</a>
+            <a href="#" class="block py-2 px-4 text-sm bg-blue-600 text-white">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">About LearnHub</h2>
+            <p class="text-lg text-gray-600 mb-6 text-center max-w-2xl mx-auto">
+                At LearnHub, we believe that education is the key to unlocking potential and transforming lives. Our mission is to provide accessible, high-quality online learning experiences that empower individuals to achieve their goals.
+            </p>
+            <p class="text-lg text-gray-600 mb-6 text-center max-w-2xl mx-auto">
+                Founded by a team of passionate educators and industry experts, LearnHub offers a diverse range of courses designed to meet the needs of learners at all stages of their journey. Whether you're looking to advance your career, switch fields, or explore a new hobby, we have something for you.
+            </p>
+            <p class="text-lg text-gray-600 mb-6 text-center max-w-2xl mx-auto">
+                Our platform features interactive content, expert instructors, and a supportive community to help you succeed. Join us today and take the first step towards transforming your future!
+            </p>
+        </div>
+    </div>
+
+    <!-- Our Values Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Community</h3>
+                    <p class="text-gray-600">We foster a supportive and inclusive learning environment where everyone can thrive.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Innovation</h3>
+                    <p class="text-gray-600">We embrace new ideas and technologies to enhance the learning experience.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-check-circle text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Excellence</h3>
+                    <p class="text-gray-600">We are committed to delivering high-quality education and support to our learners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Learn<span class="text-blue-400">Hub</span></h3>
+                    <p class="text-gray-400">Transforming lives through online education.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-2"></i>
+                            info@learnhub.com
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            123 Learning Street, Education City
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+    </script>
+</body>
+
+</html>
